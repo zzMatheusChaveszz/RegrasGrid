@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+Body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(91, 86, 99);
+    padding: 1%;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+ 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+   }
+
+   .wrapper>div {
+    background: #56555828;
+    padding: 1em;
+   }
+
+   .nested {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 70px;
+    grid-gap: 1em;
+   }
+
+   .nested>div {
+    background: rgba(74, 74, 75, 0.295);
+    text-align: center;
+    color: #5a64c2;
+   }

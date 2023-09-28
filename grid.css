@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+Body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(91, 86, 99);
+    padding: 1%;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+ 
+.wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 1em;
+    overflow-x: hidden;
+   }
+
+   .wrapper>article {
+    background: #78789e1e;
+    padding: 1em;
+   }
+
+   .wrapper>article:nth-child(odd) {
+    background: rgba(97, 97, 100, 0.185);
+   }
